@@ -176,11 +176,11 @@ function genResultGrid() {
     <div class="message" v-if="message">
       {{ message }}
       <pre v-if="grid">{{ grid }}</pre>
-      Lordle of the Rings #{{ dayNumber }}
+      Hogwardle #{{ dayNumber }}
     </div>
   </Transition>
   <header>
-    <h1>LORDLE OF THE RINGS</h1>
+    <h1>HOGWARDLE</h1>
   </header>
   <div id="board">
     <div
@@ -206,7 +206,7 @@ function genResultGrid() {
   <Keyboard @key="onKey" :letter-states="letterStates" />
   <div>
     Use only five-letter words (including names)
-    <br/>in the main text of Lord of the Rings.
+    <br/>in the main text of Harry Potter.
     <br/>Built on <a
       href="https://github.com/yyx990803/vue-wordle"
       target="_blank"
